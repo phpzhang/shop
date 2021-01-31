@@ -28,6 +28,10 @@ class Cart extends Model {
         $data = ['红'];
 //        第二次修改
         $data[] = '蓝';
+//        第三次修改
+        $data[] = '黄';
+
+
         return $this->hasOne('PromGoods', 'id', 'prom_id')->cache(true,10);
     }
 
