@@ -24,6 +24,8 @@ class Cart extends Model {
     }
     public function promGoods()
     {
+//        第一次修改
+        $data = ['红'];
         return $this->hasOne('PromGoods', 'id', 'prom_id')->cache(true,10);
     }
 
