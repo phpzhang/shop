@@ -24,7 +24,7 @@ class Combination extends Model
     protected static function init()
     {
 
-
+        echo '我是master分支';
         //TODO:自定义的初始化
     }
 
