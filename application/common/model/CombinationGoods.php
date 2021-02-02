@@ -23,7 +23,7 @@ class CombinationGoods extends Model
     //自定义初始化
     protected static function init()
     {
-
+        echo '我是dev分支';
         //TODO:自定义的初始化
     }
 
