@@ -48,4 +48,10 @@ class CombinationGoods extends Model
             return ['副商品1'];
         }
     }
+
+    public function test()
+    {
+        return 'test1';
+
+    }
 }
