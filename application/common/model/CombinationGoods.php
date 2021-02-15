@@ -43,9 +43,9 @@ class CombinationGoods extends Model
     public function getIsMasterTextAttr($value,$data)
     {
         if($data['is_master'] == 1){
-            return '主商品';
+            return ['主商品1'];
         }else{
-            return '副商品';
+            return ['副商品1'];
         }
     }
 }
