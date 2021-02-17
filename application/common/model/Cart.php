@@ -40,6 +40,9 @@ class Cart extends Model {
     public function goods()
     {
         echo 'dev分支的修改';
+        echo 'dev分支正在开发的内容..';
+        echo '修改了master分支上的bug';
+        echo '在次修复了master分支的bug';
         return $this->hasOne('Goods', 'goods_id', 'goods_id')->cache(true,10)->field('goods_id,cat_id,store_count,is_on_sale,prom_type,prom_id,weight,is_virtual')->bind([
             'cat_id'	=> 'cat_id','store_count'=>'store_count','is_on_sale'=>'is_on_sale','weight'=>'weight'
         ]);
@@ -48,7 +51,7 @@ class Cart extends Model {
     //能加入购物车的商品都是不是虚拟商品。
     public function getIsVirtualAttr($value, $data)
     {
-        return 0;
+        return 0001;
     }
 
 
