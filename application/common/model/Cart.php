@@ -49,7 +49,7 @@ class Cart extends Model {
     //能加入购物车的商品都是不是虚拟商品。
     public function getIsVirtualAttr($value, $data)
     {
-        return 0;
+        return 0001;
     }
 
 
