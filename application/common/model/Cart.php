@@ -39,7 +39,7 @@ class Cart extends Model {
 
     public function goods()
     {
-        echo 'dev分支的修改';
+        echo 'master分支的修改';
         return $this->hasOne('Goods', 'goods_id', 'goods_id')->cache(true,10)->field('goods_id,cat_id,store_count,is_on_sale,prom_type,prom_id,weight,is_virtual')->bind([
             'cat_id'	=> 'cat_id','store_count'=>'store_count','is_on_sale'=>'is_on_sale','weight'=>'weight'
         ]);
