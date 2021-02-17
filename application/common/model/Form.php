@@ -22,7 +22,7 @@ class Form extends Model
 
     public function getSubmitValueAttr($value, $data){
 
-        echo '我是第一个版本';
+        echo '主分支修改的第一个版本';
         return  json_decode($value,true);
     }
 

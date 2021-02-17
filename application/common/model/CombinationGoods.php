@@ -23,7 +23,8 @@ class CombinationGoods extends Model
     //自定义初始化
     protected static function init()
     {
-        echo '我是dev分支';
+
+        echo '我是master分支';
         //TODO:自定义的初始化
     }
 
@@ -43,9 +44,9 @@ class CombinationGoods extends Model
     public function getIsMasterTextAttr($value,$data)
     {
         if($data['is_master'] == 1){
-            return ['主商品1'];
+            return '主商品';
         }else{
-            return ['副商品1'];
+            return '副商品';
         }
     }
 
