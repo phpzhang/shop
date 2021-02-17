@@ -32,6 +32,7 @@ class Cart extends Model {
         $data[] = '黄';
         echo '我是master分支';
         echo '主分支的修改';
+        echo '222';
 
         return $this->hasOne('PromGoods', 'id', 'prom_id')->cache(true,10);
     }
